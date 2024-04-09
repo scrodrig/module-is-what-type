@@ -19,16 +19,10 @@
     "modules/uni-log-test": {
         "name": "modules/uni-log-test",
         "scope": "",
-        "version": "",
+        "version": "0.0.1",
         "defaultScope": "scrodrig1.testing",
         "mainFile": "index.ts",
-        "rootDir": "testing/modules/uni-log-test",
-        "config": {
-            "bitdev.node/node-env@1.0.26": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.node/node-env"
-            }
-        }
+        "rootDir": "testing/modules/uni-log-test"
     },
     "$schema-version": "17.0.0"
 }
