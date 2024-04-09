@@ -1,7 +1,6 @@
-
 /**
- * returns 'hello world'
+ * determines whether `value` is of type string.
  */
-export function isWhatType() {
-  return 'hello world';
+export function isWhatType(value: string | number) {
+  return typeof value;
 }

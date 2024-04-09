@@ -1,10 +1,16 @@
 ---
-labels: ['IsWhatType', 'module']
-description: 'A IsWhatType module.'
+description: Determines whether `value` is of type string
 ---
 
-A isWhatType module.
+A NodeJS module for determining whether `value` is of type string | number
+
+### Component usage
 
 ```ts
-isWhatType();
+
+const foo = isWhatType('foo');
+const oddNumber = isWhatType(15);
+
+console.log(foo); // echo `string`
+console.log(oddNumber); // echo `number`
 ```
