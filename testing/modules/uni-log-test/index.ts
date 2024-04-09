@@ -1,1 +1,1 @@
-export { uniLogTest, isString } from './uni-log-test.js';
+export { uniLogTest, isString, isStringLodash  } from './uni-log-test.js';

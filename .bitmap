@@ -18,9 +18,8 @@
     },
     "modules/uni-log-test": {
         "name": "modules/uni-log-test",
-        "scope": "",
+        "scope": "scrodrig1.testing",
         "version": "0.0.1",
-        "defaultScope": "scrodrig1.testing",
         "mainFile": "index.ts",
         "rootDir": "testing/modules/uni-log-test"
     },
