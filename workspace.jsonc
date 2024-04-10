@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://bit.dev/reference/workspace/workspace-json
- **/{
+ **/ {
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -32,11 +32,11 @@
     "resolveEnvsFromRoots": true
   },
   /**
-  * Enable generator templates by uncommenting the desired environments below.
-  * These generators scaffold components for Node, React, Vue, and Angular.
-  * After uncommenting, run `bit install` to make them available in your workspace.
-  * Explore more dev environments at: https://bit.dev/docs/getting-started/composing/dev-environments
-  **/
+   * Enable generator templates by uncommenting the desired environments below.
+   * These generators scaffold components for Node, React, Vue, and Angular.
+   * After uncommenting, run `bit install` to make them available in your workspace.
+   * Explore more dev environments at: https://bit.dev/docs/getting-started/composing/dev-environments
+   **/
   "teambit.generator/generator": {
     "envs": [
       //  "bitdev.node/node-env",
@@ -55,10 +55,7 @@
     "packageManager": "teambit.dependencies/pnpm",
     "rootComponents": true,
     "policy": {
-      "dependencies": {
-        "classnames": "^2.3.2",
-        "lodash": "~4.17.21"
-      },
+      "dependencies": {},
       "peerDependencies": {}
     }
   },
