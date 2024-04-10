@@ -26,9 +26,6 @@ importers:
       '@typescript-eslint/parser':
         specifier: 6.19.1
         version: 6.19.1(eslint@8.56.0)(typescript@5.4.4)
-      classnames:
-        specifier: ^2.3.2
-        version: 2.5.1
       eslint:
         specifier: 8.56.0
         version: 8.56.0
@@ -57,7 +54,7 @@ importers:
         specifier: ^2.12.6
         version: 2.12.6(graphql@16.8.1)
       lodash:
-        specifier: ~4.17.21
+        specifier: ^4.17.21
         version: 4.17.21
       react:
         specifier: ^18.0.0
@@ -252,6 +249,9 @@ importers:
       graphql-tag:
         specifier: ^2.12.6
         version: 2.12.6(graphql@16.8.1)
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
       react:
         specifier: ^18.0.0
         version: 18.2.0
@@ -16756,6 +16756,7 @@ packages:
       eslint-plugin-react-hooks: 4.6.0(eslint@8.56.0)
       graphql: 16.8.1
       graphql-tag: 2.12.6(graphql@16.8.1)
+      lodash: 4.17.21
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       vitest: 1.2.1(@types/node@20.12.6)(jsdom@23.2.0)
