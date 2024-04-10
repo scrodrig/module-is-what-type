@@ -12,7 +12,7 @@
     "modules/is-what-type": {
         "name": "modules/is-what-type",
         "scope": "scrodrig1.testing",
-        "version": "0.2.0",
+        "version": "0.3.0",
         "mainFile": "index.ts",
         "rootDir": "testing/modules/is-what-type"
     },

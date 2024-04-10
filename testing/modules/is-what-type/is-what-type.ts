@@ -1,4 +1,3 @@
-
 /**
  * determines whether `value` is of type string.
  */
