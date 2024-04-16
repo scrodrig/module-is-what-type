@@ -26,6 +26,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: 6.19.1
         version: 6.19.1(eslint@8.56.0)(typescript@5.4.4)
+      axios:
+        specifier: ^1.6.8
+        version: 1.6.8
       eslint:
         specifier: 8.56.0
         version: 8.56.0
@@ -84,6 +87,9 @@ importers:
       '@scrodrig1/testing.modules.uni-log-test':
         specifier: workspace:*
         version: file:testing/modules/uni-log-test
+      '@scrodrig1/testing.modules.unified-log':
+        specifier: workspace:*
+        version: file:testing/modules/unified-log
       '@teambit/mdx.ui.mdx-scope-context':
         specifier: 1.0.7
         version: 1.0.7(@types/react@18.2.23)(react@18.2.0)
@@ -139,6 +145,8 @@ importers:
       '@scrodrig1/testing.modules.is-what-type':
         injected: true
       '@scrodrig1/testing.modules.uni-log-test':
+        injected: true
+      '@scrodrig1/testing.modules.unified-log':
         injected: true
 
   testing/modules/is-what-type:
@@ -252,6 +260,67 @@ importers:
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
+      react:
+        specifier: ^18.0.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.0.0
+        version: 18.2.0(react@18.2.0)
+      vitest:
+        specifier: 1.2.1
+        version: 1.2.1(@types/node@20.12.6)(jsdom@23.2.0)
+    devDependencies:
+      '@bitdev/node.node-env':
+        specifier: 1.0.26
+        version: 1.0.26
+
+  testing/modules/unified-log:
+    dependencies:
+      '@mdx-js/react':
+        specifier: 1.6.22
+        version: 1.6.22(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context':
+        specifier: 1.0.7
+        version: 1.0.7(@types/react@18.2.23)(react@18.2.0)
+      '@types/jest':
+        specifier: ^29.2.2
+        version: 29.5.12
+      '@types/node':
+        specifier: ^20.11.23
+        version: 20.12.6
+      '@typescript-eslint/eslint-plugin':
+        specifier: 6.19.1
+        version: 6.19.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)(typescript@5.4.4)
+      '@typescript-eslint/parser':
+        specifier: 6.19.1
+        version: 6.19.1(eslint@8.56.0)(typescript@5.4.4)
+      eslint:
+        specifier: 8.56.0
+        version: 8.56.0
+      eslint-plugin-import:
+        specifier: 2.29.1
+        version: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
+      eslint-plugin-jest:
+        specifier: 27.6.3
+        version: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(typescript@5.4.4)
+      eslint-plugin-jsx-a11y:
+        specifier: 6.8.0
+        version: 6.8.0(eslint@8.56.0)
+      eslint-plugin-mdx:
+        specifier: 3.1.5
+        version: 3.1.5(eslint@8.56.0)
+      eslint-plugin-react:
+        specifier: 7.33.2
+        version: 7.33.2(eslint@8.56.0)
+      eslint-plugin-react-hooks:
+        specifier: 4.6.0
+        version: 4.6.0(eslint@8.56.0)
+      graphql:
+        specifier: ^16.8.1
+        version: 16.8.1
+      graphql-tag:
+        specifier: ^2.12.6
+        version: 2.12.6(graphql@16.8.1)
       react:
         specifier: ^18.0.0
         version: 18.2.0
@@ -7463,6 +7532,16 @@ packages:
     resolution: {integrity: sha512-M0JtH+hlOL5pLQwHOLNYZaXuhqmvS8oExsqB1SBYgA4Dk7u/xx+YdGHXaK5pyUfed5mYXdlYiphWq3G8cRi5JQ==}
     engines: {node: '>=4'}
 
+  /axios@1.6.8:
+    resolution: {integrity: sha512-v/ZHtJDU39mDpyBoFVkETcd/uNdxrWRrg3bKpOKzXFA6Bvqopts6ALSMU3y6ijYxbw2B+wPrIv46egTzJXCLGQ==}
+    dependencies:
+      follow-redirects: 1.15.6
+      form-data: 4.0.0
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
   /axobject-query@3.2.1:
     resolution: {integrity: sha512-jsyHu61e6N4Vbz/v18DHwWYKK0bSWLqn47eeDSKPB7m8tqMHF9YJ+mhIk2lVteyZrY8tnSj/jHOv4YiTCuCJgg==}
     dependencies:
@@ -14001,6 +14080,10 @@ packages:
       forwarded: 0.2.0
       ipaddr.js: 1.9.1
 
+  /proxy-from-env@1.1.0:
+    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
+    dev: false
+
   /prr@1.0.1:
     resolution: {integrity: sha512-yPw4Sng1gWghHQWj0B3ZggWUm4qVbPwPFcRG8KyxiU7J2OHFSoEHKS+EZ3fv5l1t9CyCiop6l/ZYeWbrgoQejw==}
 
@@ -16757,6 +16840,48 @@ packages:
       graphql: 16.8.1
       graphql-tag: 2.12.6(graphql@16.8.1)
       lodash: 4.17.21
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      vitest: 1.2.1(@types/node@20.12.6)(jsdom@23.2.0)
+    transitivePeerDependencies:
+      - '@edge-runtime/vm'
+      - '@types/react'
+      - '@vitest/browser'
+      - '@vitest/ui'
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - happy-dom
+      - jest
+      - jsdom
+      - less
+      - lightningcss
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - typescript
+    dev: false
+
+  file:testing/modules/unified-log:
+    resolution: {directory: testing/modules/unified-log, type: directory}
+    name: '@scrodrig1/testing.modules.unified-log'
+    dependencies:
+      '@mdx-js/react': 1.6.22(react@18.2.0)
+      '@teambit/mdx.ui.mdx-scope-context': 1.0.7(@types/react@18.2.23)(react@18.2.0)
+      '@types/jest': 29.5.12
+      '@types/node': 20.12.6
+      '@typescript-eslint/eslint-plugin': 6.19.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)(typescript@5.4.4)
+      '@typescript-eslint/parser': 6.19.1(eslint@8.56.0)(typescript@5.4.4)
+      eslint: 8.56.0
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
+      eslint-plugin-jest: 27.6.3(@typescript-eslint/eslint-plugin@6.19.1)(eslint@8.56.0)(typescript@5.4.4)
+      eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
+      eslint-plugin-mdx: 3.1.5(eslint@8.56.0)
+      eslint-plugin-react: 7.33.2(eslint@8.56.0)
+      eslint-plugin-react-hooks: 4.6.0(eslint@8.56.0)
+      graphql: 16.8.1
+      graphql-tag: 2.12.6(graphql@16.8.1)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       vitest: 1.2.1(@types/node@20.12.6)(jsdom@23.2.0)
