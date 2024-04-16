@@ -3,14 +3,14 @@ class UnifiedLog {
 
   client_secret: string;
 
-  env: 'DEV'|'PROD' = 'DEV';
+  env: 'DEV' | 'QUA' | 'PPR' | 'PRD' = 'DEV';
 
   constructor(client_id?: string, client_secret?: string) {
     this.client_id = client_id;
     this.client_secret = client_secret;
   }
 
-  start(): {} {
+  start(): any {
     if (!this.client_id && !this.client_secret) {
       throw new Error('client_id and client_secret are required');
     }
