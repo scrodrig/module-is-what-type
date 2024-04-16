@@ -23,5 +23,19 @@
         "mainFile": "index.ts",
         "rootDir": "testing/modules/uni-log-test"
     },
+    "modules/unified-log": {
+        "name": "modules/unified-log",
+        "scope": "",
+        "version": "",
+        "defaultScope": "scrodrig1.testing",
+        "mainFile": "index.ts",
+        "rootDir": "testing/modules/unified-log",
+        "config": {
+            "bitdev.node/node-env@1.0.26": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.node/node-env"
+            }
+        }
+    },
     "$schema-version": "17.0.0"
 }
